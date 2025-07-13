@@ -1,0 +1,87 @@
+body {
+  text-align: center;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #000; /* Pure black for max contrast */
+  color: #fff; 
+  padding-top: 40px;
+}
+
+h1 {
+  font-family: 'Orbitron', sans-serif;
+  color: #5f3bff;
+  text-shadow: 0 0 10px #f70d0d, 0 0 20px #ff0d0d;
+  letter-spacing: 2px;
+}
+
+
+#game {
+  display: grid;
+  grid-template-columns: repeat(3, 100px);
+  gap: 10px;
+  justify-content: center;
+  margin: 20px auto;
+}
+
+.cell {
+  width: 100px;
+  height: 100px;
+  background-color: #111; /* Darker black cells */
+  font-size: 2.5rem;
+  color: #ff3b3b; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  border: 2px solid #3b5fff;
+  box-shadow: 0 0 10px #ff3b3b, 0 0 20px #ff3b3b; /* Neon glow */
+  transition: background-color 0.3s ease, transform 0.2s, box-shadow 0.3s;
+}
+
+.cell:hover {
+  background-color: #1a1a1a;
+  transform: scale(1.08);
+  box-shadow: 0 0 20px #ff0000, 0 0 40px #ff0000; /* Stronger glow on hover */
+}
+
+#status {
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+  color: #eeff00;
+  text-shadow: 0 0 10px #ff3b3b, 0 0 20px #ff0000; /* Glowing text */
+}
+
+#reset {
+  padding: 10px 20px;
+  font-size: 1rem;
+  background-color: #ff3bff;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  box-shadow: 0 0 10px #ff3b3b, 0 0 20px #ff0000; /* Glow around button */
+ transition: background-color 0.3s ease, box-shadow 0.3s ease;
+
+}
+
+#reset:hover {
+  background-color: #ff0000;
+  box-shadow: 0 0 20px #ff0000, 0 0 40px #ff0000; /* Bigger glow on hover */
+}
+
+#game {
+  position: relative; /* Make it relative so strike is positioned absolutely */
+}
+
+#strike {
+  position: absolute;
+  height: 4px;
+  background: #ff0909;
+  width: 300px; /* Enough to cover the grid */
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scaleX(0);
+  transform-origin: center;
+  transition: transform 0.4s ease;
+  box-shadow: 0 0 10px #ff3b3b, 0 0 20px #ff0000;
+}
+
+
