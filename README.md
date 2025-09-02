@@ -2,7 +2,7 @@
 
 A sleek, responsive Tic Tac Toe game built with vanilla JavaScript, HTML, and CSS. Designed for intuitive play and polished user experience, this project showcases clean logic, dynamic UI feedback, and a satisfying win animation.
 
-link for website: https://tiktaktoy.netlify.app/
+🔗 [Live Demo] (https://tiktaktoy.netlify.app/)
 
 ## ✨ Features
 
